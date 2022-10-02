@@ -1,0 +1,251 @@
+@import"./reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root{
+    --light-brown: #EEE7E1;
+    --Dark-brown: #443434;
+    --black-brown: #1E1E1E;
+    --highlighted-nav: #866961;
+    --border-brown: #D9D9D9;
+    --light-dark-brown: #A0847C;
+    --body-brown: #BA8F8F;
+    --background-black: #252521;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-black);
+    color: #FFFFFF;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+}
+.side-bar{
+    height: 100%;
+    width: 5%;
+    background-color: var(--highlighted-nav);
+}
+.name{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: montserrat;
+    color: var(--Dark-brown);
+}
+.git{
+    margin-top: 285px;
+    margin-left: 20px;
+}
+.mail{
+    margin-top: 60px;
+    margin-left: 23px;
+}
+.linkedin{
+    margin-top: 50px;
+    margin-left: 27px;
+}
+.moon{
+    margin-top: 370px;
+    margin-left: 24px;
+    margin-bottom: 59px;
+}
+.container{
+    padding: 31px 10%;
+}
+.container{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top-nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    font-family: montserrat;
+}
+a{
+    text-decoration: none;
+    font-family: poppins;
+    color: var(--body-brown);
+    position: relative;
+}
+.home{
+    margin-left: 874px;
+    font-size: 20px;
+}
+.home::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--light-dark-brown);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.home:hover{
+    color: var(--border-brown);
+}
+
+.home:hover::after{
+     width: 100%;
+}
+
+.about{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.about::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--light-dark-brown);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.about:hover{
+    color: var(--border-brown);
+}
+
+.about:hover::after{
+     width: 100%;
+}
+
+.service{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.service::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--light-dark-brown);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.service:hover{
+    color: var(--border-brown);
+}
+
+.service:hover::after{
+     width: 100%;
+}
+
+.portfolio{
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.portfolio::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--light-dark-brown);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.portfolio:hover{
+    color: var(--border-brown);
+}
+
+.portfolio:hover::after{
+     width: 100%;
+}
+
+.contact{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.contact::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--light-dark-brown);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.contact:hover{
+    color: var(--border-brown);
+}
+
+.contact:hover::after{
+     width: 100%;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+}
+.mid-tab{
+    display: flex;
+    flex-direction: column;
+}
+.tab{
+    margin-top: 350px;
+    margin-left: 50px;
+    font-size: 20px;
+    color: var(--light-dark-brown);
+}
+.tab1{
+    margin-top: 10px;
+    margin-left: 45px;
+    font-size: 60px;
+    color: var(--light-brown);
+}
+span{
+    color: var(--highlighted-nav);
+    font-size: 70px;
+    font-weight: 600;
+}
+.background{
+    position: relative;
+    margin-left: 332px;
+    margin-top: 154px;
+}
+.pic{
+    position: absolute;
+    margin-left: 945px;
+    margin-top: 296px;
+}
+.bubbles{
+    display: flex;
+}
+.bub1{
+    position: absolute;
+    margin-top: -513px;
+    margin-left: 859px;
+}
+.bub2{
+    position: absolute;
+    margin-top: -604px;
+    margin-left: 1384px;
+}
+.bub3{
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 369px;
+}
+.bub4{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 41px;
+}
