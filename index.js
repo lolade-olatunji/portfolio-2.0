@@ -11,3 +11,26 @@ function opentab(tabname){
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/
+  AKfycbzR2vi9TY-zTYGo7Oef9KruugD86gxk7KdXvZ7rCMm7-WoKT_vZWos4N7hkzqbDuMSY/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>

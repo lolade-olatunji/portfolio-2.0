@@ -11,6 +11,8 @@
     --light-dark-brown: #A0847C;
     --body-brown: #BA8F8F;
     --background-black: #252521;
+    --splash-brown: #53473d;
+    --faint-black:  #3b3a38;
 }
 
 *{
@@ -19,212 +21,104 @@
     font-family: 'montserrat', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: var(--background-black);
     color: #FFFFFF;
 }
-
-.main-section{
+#Header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.side-bar{
-    height: 100%;
-    width: 5%;
-    background-color: var(--highlighted-nav);
+.logo{
+    width: 140px;
 }
-.name{
-    margin-top: 30px;
-    margin-left: 50px;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: montserrat;
-    color: var(--highlighted-nav);
+
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--body-brown);
+    position: relative;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--light-dark-brown);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color: var(--border-brown);
+}
+
+nav ul li a:hover::after{
+     width: 100%;
+}
+.theme{
+  position: absolute;
+  margin-top: 2px;
+}
+.icons{
+    display: grid;
 }
 .git{
     margin-top: 285px;
     margin-left: 48px;
 }
 .mail{
-    margin-top: 60px;
-    margin-left:50px;
+    margin-top: -48px;
+    margin-left: 50px;
 }
 .linkedin{
-    margin-top: 50px;
+    margin-top: -74px;
     margin-left: 52px;
 }
-.moon{
-    margin-top: 370px;
-    margin-left: 59px;
-    margin-bottom: 59px;
-}
-.container{
-    padding: 31px 10%;
-}
-.container{
-    flex: 1;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.top-nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 30%;
-    font-family: montserrat;
-}
-a{
-    text-decoration: none;
-    font-family: poppins;
-    color: var(--body-brown);
-    position: relative;
-}
-.home{
-    margin-left: 874px;
-    font-size: 20px;
-}
-.home::after{
-    content: '';
-    width: 0%;
-    height: 3px;
-    background: var(--light-dark-brown);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-.home:hover{
-    color: var(--border-brown);
-}
-
-.home:hover::after{
-     width: 100%;
-}
-
-.about{
-    margin-left: 40px;
-    font-size: 20px;
-}
-.about::after{
-    content: '';
-    width: 0%;
-    height: 3px;
-    background: var(--light-dark-brown);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-.about:hover{
-    color: var(--border-brown);
-}
-
-.about:hover::after{
-     width: 100%;
-}
-
-.service{
-    margin-left: 40px;
-    font-size: 20px;
-}
-.service::after{
-    content: '';
-    width: 0%;
-    height: 3px;
-    background: var(--light-dark-brown);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-.service:hover{
-    color: var(--border-brown);
-}
-
-.service:hover::after{
-     width: 100%;
-}
-
-.portfolio{
-    margin-left: 40px;
-    font-size: 20px;
-}
-
-.portfolio::after{
-    content: '';
-    width: 0%;
-    height: 3px;
-    background: var(--light-dark-brown);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-.portfolio:hover{
-    color: var(--border-brown);
-}
-
-.portfolio:hover::after{
-     width: 100%;
-}
-
-.contact{
-    margin-left: 40px;
-    font-size: 20px;
-}
-.contact::after{
-    content: '';
-    width: 0%;
-    height: 3px;
-    background: var(--light-dark-brown);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-.contact:hover{
-    color: var(--border-brown);
-}
-
-.contact:hover::after{
-     width: 100%;
-}
-.head{
+.home-left{
     display: flex;
     flex-direction: row;
 }
-.mid-tab{
-    display: flex;
-    flex-direction: column;
+.header-text{
+    margin-top: 45%;
+    font-size: 30px;
+    margin-left: 204px;
 }
-.tab{
-    margin-top: 350px;
-    margin-left: 50px;
-    font-size: 20px;
-    color: var(--light-dark-brown);
-}
-.tab1{
-    margin-top: 10px;
-    margin-left: 45px;
+.header-text h1{
     font-size: 60px;
-    color: var(--light-brown);
+    margin-top: 20px;
 }
-.cindy{
+.header-text h1 span{
     color: var(--highlighted-nav);
-    font-size: 70px;
-    font-weight: 600;
 }
-.background{
-    position: relative;
-    margin-left: 312px;
-    margin-top: 252px;
+.sub-header{
+    display: flex;
+    flex-direction: row;
 }
-.pic{
-    position: absolute;
-    margin-left: 883px;
-    margin-top: 307px;
+.my-pic{
+    margin-top: 145px;
+    margin-left: 122px;
+    width: 70%;
 }
 .bubbles{
     display: flex;
@@ -256,33 +150,6 @@ a{
     flex-direction: row;
 }
 
-
-.name-about{
-    margin-top: 52px;
-    margin-left: 50px;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: montserrat;
-    color: var(--highlighted-nav);
-}
-.git-about{
-    margin-top: 285px;
-    margin-left: 48px;
-}
-.mail-about{
-    margin-top: 60px;
-    margin-left: 50px;
-}
-.linkedin-about{
-    margin-top: 50px;
-    margin-left: 52px;
-}
-.moon-about{
-    margin-top: 370px;
-    margin-left: 39px;
-    margin-bottom: 59px;
-}
-
 .container-about{
     padding: 80px 0;
 }
@@ -294,37 +161,10 @@ a{
 
 .background-about{
     position: relative;
-    margin-top: 167px;
+    margin-top: 204px;
     margin-left: 272px;
+    width: 500px;
 }
-.pic-about{
-    position: absolute;
-    margin-top: 219px;
-    margin-left: -375px;
-}
-.bub-abt1{
-    position: absolute;
-   margin-left: 1169px;
-   margin-top: 20px;
-}
-   
-.bub-abt2{
-    position: absolute;
-   margin-left: 1419px;
-   margin-top: 56px;
-}
-.bub-abt3{
-    position: absolute;
-   margin-left: 293px;
-   margin-top: 737px;
-}
-.bub-abt4{
-    position: absolute;
-   margin-left: 563px;
-   margin-top: 807px;
-}
-
-
 
 .about-col-1{
     flex-basis: 35%;
@@ -339,6 +179,7 @@ a{
 .body-about{
     font-size: 25px;
     color: var(--border-brown);
+    line-height: 25px;
 }
 .body-about1{
     margin-left: 161px;
@@ -391,8 +232,9 @@ a{
 
 .tab-contents ul li{
     list-style: none;
-    font-size: 14px;
-    margin-top: 21px;
+    font-size: 20px;
+    margin-top: 25px;
+    line-height: 30px;
 
 }
 .tab-contents ul li span{
@@ -413,28 +255,28 @@ a{
 }
 .bub-ser1{
     position: absolute;
-   margin-left: 1169px;
-   margin-top: 20px;
+   margin-left: 717px;
+   margin-top: -104px;
 }
    
 .bub-ser2{
     position: absolute;
-   margin-left: 1419px;
-   margin-top: 56px;
+   margin-left: 1361px;
+   margin-top: -64px;
 }
 .bub-ser3{
     position: absolute;
-   margin-left: 293px;
-   margin-top: 737px;
+   margin-left: 663px;
+   margin-top: 648px;
 }
 .bub-ser4{
     position: absolute;
-   margin-left: 563px;
-   margin-top: 807px;
+   margin-left: 1107px;
+   margin-top: 698px;
 }
 
 .my-services{
-    margin-top: 149px;
+    margin-top: 11px;
     margin-left: 2px;
     font-size: 60px;
     font-weight: 700;
@@ -477,7 +319,7 @@ a{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #53473d;
+    background: var(--splash-brown);
     transform: translateY(-10px);
 }
 #portfolio{
@@ -504,7 +346,7 @@ a{
 .layer{
     width:100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6),#53473d);
+    background: linear-gradient(rgba(0,0,0,0.6),var(--splash-brown));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -543,4 +385,235 @@ a{
 
 .work:hover .layer{
     height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid var(--highlighted-nav);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--body-brown);
+    transition: background 0.5s ;
+}
+.btn:hover{
+   background: var(--splash-brown);
+}
+
+/*--------------------------------contact----------------------------------*/
+
+.contact-left{
+      flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+   margin-top: 30px;
+}
+.contact-left p i {
+    color: var(--highlighted-nav);
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 45px;
+}
+.social-icons a{
+     text-decoration: none;
+     font-size: 30px;
+     margin-right: 15px;
+     color: #ababab;
+     display: inline-block;
+     transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: var(--highlighted-nav);
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    padding: 21px 55px;
+    background-color: var(--highlighted-nav);
+    color: var(--border-brown);
+}
+.btn.btn2:hover{
+    background-color: var(--body-brown);
+    color: var(--Dark-brown);
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: var(--faint-black);
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: var(--light-brown);
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*--------------------------------copyright---------------------------------*/
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: var(--faint-black);
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: var(--highlighted-nav);
+}
+/*--------------css for small screen--------------*/
+  nav .fa-sharp{
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+    .my-pic{
+       margin-left: -189px;
+       margin-top: 105px;
+        width: 162px;
+    }
+    .header-text{
+       margin-top: 100%;
+       font-size: 16px;
+       width: 100%;
+    }
+    .header-text h1{
+        font-size: 25px;
+        width: 212px;
+       margin-left: -139px;
+       text-align: center;
+    }
+    .bubbles-home{
+        display: none;
+    }
+    .bubbles-about{
+        display: none;
+    }
+    nav ul li{
+        font-size: 25px;
+    }
+    nav .fa-sharp{
+        display: block;
+        font-size: 25px;
+      }
+      nav ul{
+        background: var(--splash-brown);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+        
+      }
+      nav ul li{
+        display: block;
+        margin: 25px;
+      }
+      nav ul .fa-sharp{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+      }
+    
+      .theme{
+        margin-top: 489px;
+        margin-left: 82px;
+      }
+      .git{
+        width: 20px;
+        margin-top: 83px;
+      }
+      .mail{
+        width: 20px;
+        margin-top: -45px;
+      }
+      .linkedin{
+        width: 20px;
+        margin-top: -75px;
+      }
+      .icons{
+        margin-left: -40px;
+      }
+      .soft{
+        font-size: 14px;
+        margin-top: 35px;
+        margin-left: -108px;
+        text-align: center;
+        width: 150px;
+      }
+      .logo{
+        width: 58px;
+      }
+      
+      .background-about{
+        width: 211px;
+        margin-top: -219px;
+        margin-left: 100px;
+      }
+    .about-me{
+        font-size: 40px;
+        margin-top: 72px;
+        margin-left: 128px;
+    }
+    .body-about{
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: -118px;
+    }
+    .tab-titles{
+       font-size: 16px; 
+       margin-left: -120px;
+    }
+    
+    .tab-contents ul li span{
+        font-size: 16px;
+        ;
+    }
+    .tab-contents ul li{
+        font-size: 14px;
+    }
+    .tab-contents{
+        margin-left: 41px ;
+    }
+    .my-services{
+        font-size: 40px;
+        margin-top: 1px;
+        margin-left: 2px;
+    }
+    .contact-left h1{
+        font-size: 30px;
+    }
+    .contact-left p{
+        width: 200px;
+    }
+    .btn{
+        width: 300px;
+        text-align: center;
+    }
+    .social-icons{
+        margin-left: 63px;
+       
+    }
 }

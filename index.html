@@ -9,74 +9,66 @@
     <script src="https://kit.fontawesome.com/20ee0cb968.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="main-section" >
+     <div id="Header">
+        <div class="container">
+           <nav>
+            <img src="./assets/cindy logo.svg" class="logo">
+              <ul id="sidemenu">
+                <li><a  class="home-home" href="#Header">Home</a></li>
+                <li><a  class="about-home" href="#about">About</a></li>
+                <li><a  class="service-home" href="#services">Service</a></li>
+                <li><a  class="portfolio-home" href="#portfolio">Portfolio</a></li>
+                <li><a  class="contact-home" href="#contact">contact</a></li>
+                <li class="theme"><img src="./assets/light theme.svg" alt=""></li>
+                <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+              </ul>
+              <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+           </nav>
 
-        <div >
-            <div class="name">Cindy</div>
-            <div class="git"><a href="https://github.com"><img src="./assets/darktgit-hub.svg" alt="git-hub link"></a></div>
-            <div class="mail"> <a href="https://www.mail.com"><img src="./assets/darkt mail.svg" alt="mail"></a></div>
-            <div class="linkedin"><a href="https://www.linkedin.com"><img src="./assets/darkt linkedin.svg" alt="linkedin"></a></div>
-            <div class="moon"><a href="#"><img src="./assets/light theme.svg" alt=""></a></div>
+        <div class="sub-header">
+        <div class="home-left">
+            <div class="icons">
+                <a href="https://github.com"><img src="./assets/darktgit-hub.svg" class="git"></a>
+                <a href="https://www.mail.com"><img src="./assets/darkt mail.svg" class="mail"></a>
+               <a href="https://www.linkedin.com"><img src="./assets/darkt linkedin.svg" class="linkedin"></a>
+            </div>
+
+            <div class="header-text">
+                <p class="soft">Software Engineer</p>
+                <h1 class="hey">Hey, I'm <span> Cindy </span><br> Eke From Nigeria</h1>
+            </div>
         </div>
 
-         <div class="container">
-            
-         <div class="top-nav">
-                <div><a  class="home" href="#">Home</a></div>
-                <div><a  class="about" href="#">About</a></div>
-                <div><a  class="service"  href="#">Service</a></div>
-                <div><a  class="portfolio" href="#">Portfolio</a></div>
-                <div><a  class="contact" href="#">contact</a></div>
-         </div>
-         
-         <header class="head">
-
-            <div class="mid-tab">
-              <div class="tab"> Software Engineer</div>
-              <div class="tab1">Hey! I'm <span class="cindy">Cindy</span><br>Eke From Nigeria..</div>
-            </div>
-            <img src="./assets/Ellipse 17 (1).svg" class="background">
-            <img src="./assets/Img Grp.svg" class="pic">
-
-         </header>
-         
-         <div class="bubbles">
-            <div class="bub1"><img src="./assets/brown top bubble.svg" alt="bubbles"></div>
-            <div class="bub2"><img src="./assets/brown top bubbles.svg" alt="bubble"></div>
-            <div class="bub3"><img src="./assets/brown down bubble.svg" alt="bubble"></div>
-            <div class="bub4"><img src="./assets/brown down bubbles.svg" alt="bubble"></div>
-         </div>
-
+        <div class="home-right">
+            <img src="./assets/desktop pic.svg" class="my-pic">
+        </div>
     </div>
-    </section>
+
+    <div class="bubbles-home">
+        <div class="bub1"><img src="./assets/brown top bubble.svg" alt="bubbles"></div>
+        <div class="bub2"><img src="./assets/brown top bubbles.svg" alt="bubble"></div>
+        <div class="bub3"><img src="./assets/brown down bubble.svg" alt="bubble"></div>
+        <div class="bub4"><img src="./assets/brown down bubbles.svg" alt="bubble"></div>
+     </div>
+        </div>
+     </div>
 
    <!---------------- about ---------------->
 
     <section id="about">
         <div class="main-section2">
-
-            <div>
-                <div class="name-about">Cindy</div>
-                <div class="git-about"><a href="https://github.com"><img src="./assets/darktgit-hub.svg" alt="git-hub link"></a></div>
-                <div class="mail-about"> <a href="https://www.mail.com"><img src="./assets/darkt mail.svg" alt="mail"></a></div>
-                <div class="linkedin-about"><a href="https://www.linkedin.com"><img src="./assets/darkt linkedin.svg" alt="linkedin"></a></div>
-                <div class="moon-about"><a href="#"><img src="./assets/light theme.svg" alt=""></a></div>
-            </div>
-
-            <div class="bubbles-about">
-                <div class="bub-abt1"><img src="./assets/brown top bubble.svg" alt="bubbles"></div>
-                <div class="bub-abt2"><img src="./assets/brown top bubbles.svg" alt="bubble"></div>
-                <div class="bub-abt3"><img src="./assets/brown down bubble.svg" alt="bubble"></div>
-                <div class="bub-abt4"><img src="./assets/brown down bubbles.svg" alt="bubble"></div>
-             </div>
             
           <div class="container-about">
+               
+            <div class="bubbles-about">
+            <div class="bub-ser1"><img src="./assets/brown top bubble.svg" alt="bubbles"></div>
+            <div class="bub-ser2"><img src="./assets/brown top bubbles.svg" alt="bubble"></div>
+            </div>
 
              <div class="row">
 
                 <div class="about-col-1">
-                    <img src="./assets/Ellipse 17 (1).svg" class="background-about">
-                    <img src="./assets/Img Grp.svg" class="pic-about">
+                    <img src="./assets/desktop pic.svg" class="background-about">
                 </div>
 
                 <div class="about-col-2">
@@ -210,6 +202,45 @@
                  <a href="#" class="btn">See more</a>
                </div>
            </div>
+
+        <!---------------------------contact------------------->
+
+             <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="my-services">Contact Me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                            <p> <i class="fa-sharp fa-solid fa-square-phone"></i> +234 123 456 7890</p>
+
+                            <div class="social-icons">
+                                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                               
+                          <a href="./assets/images/my-cv.pdf" download class="btn btn2"  >Download CV</a>
+
+                        </div>
+
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                               <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+              <div class="copyright">
+                <p>Copyright ©. Made with  <i class="fa-solid fa-heart"></i> by lolade.</p>
+              </div>
+
+             </div>
+
 
     <script src="./index.js"></script>
 </body>
