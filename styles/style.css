@@ -127,6 +127,7 @@ nav ul li a:hover::after{
     position: absolute;
     margin-top: -513px;
     margin-left: 859px;
+   
 }
 .bub2{
     position: absolute;
@@ -322,6 +323,10 @@ nav ul li a:hover::after{
     background: var(--splash-brown);
     transform: translateY(-10px);
 }
+
+
+/*--------------portfolio-----------------*/
+
 #portfolio{
     padding: 50px 0;
 
